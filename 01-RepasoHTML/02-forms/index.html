@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="senting.html" method="get">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre..."/>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Ingrese email...">
+        <label for="password">Contraseña</label>
+        <input type="password" name="password" id="password" placeholder="Ingrese password">
+        <label for="comments">Comentarios</label>
+        <textarea name="comments" id="comments" cols="30" rows="5" placeholder="ingrese sus Comentarios" minlength="10" maxlength="200"></textarea>
+        <select name="pasta" id="pasta">
+            <option value="penne">penne</option>
+            <option value="farfalle">farfalle</option>
+            <option value="lasagna">lasagna</option>
+        </select>
+        <button type="submit">enviar</button>
+
+        <form action="senting.html" method="post">
+            <p>seleccione una mascota</p>
+            <input type="radio" id="gato" name="mascota" value="gato">
+            <label for="gato">Gato</label>
+            <input type="radio" id="perro" name="mascota" value="perro">
+            <label for="perro">pero</label>
+        </form>
+
+        <form action="senting" method="post">
+            <p>seleccone sus pensamientos</p>
+            <input type="checkbox" name="pasatiempos" id="leer" value="leer">
+            <label for="leer">Leer</label>
+            <input type="checkbox" name="pasatiempos" id="musica" value="musica">
+            <label for="musica">musica</label>
+            <input type="checkbox" name="pasatiempos" id="deporte" value="deporte">
+            <label for="deporte">practicar deporte</label>
+        </form>
+    </form>
+</body>
+</html>
