@@ -1,11 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>conoce</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Lista de estudiantes</h1>
+        <nav>
+          <a href="index.html">Estudiantes</a>
+          <a href="student-form.html">Agregar estudiante</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="page-header">
+        <div>
+          <h2>Estudiantes matriculados</h2>
+        </div>
+
+        <a class="button-link" href="student-form.html">Agregar estudiante</a>
+      </div>
+      <div class="search-container">
+        <label for="searchName">Buscar por nombre</label>
+        <input
+          type="text"
+          id="searchName"
+          placeholder="Escriba el nombre del estudiante..."
+        />
+      </div>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Identificación</th>
+              <th>Nombre</th>
+              <th>Correo electronico</th>
+              <th>Carrera</th>
+              <th>Edad</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+
+          <tbody id="studentList"></tbody>
+        </table>
+      </div>
+
+      <p id="noStudentsMessage" class="emptyMessage">
+        No hay estudiantes registrados
+      </p>
+    </main>
+
+    <script src="app.js"></script>
+    <script>
+      displayStudents();
+      setupSearch();
+    </script>
+  </body>
 </html>

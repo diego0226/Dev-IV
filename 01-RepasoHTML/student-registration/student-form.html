@@ -1,32 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario estudiante</title>
-</head>
-<body>
-    <form id="studentForm" method="post">
-        <label for="identification">Identificación: </label>
-        <input type="number" id="identification" name="identification" required />
 
-        <label for="name">Nombre Completo: </label>
-        <input type="text" id="name" name="name" required />
+    <link rel="stylesheet" href="styles.css" />
 
-        <label for="email">Correo: </label>
-        <input type="email" id="email" name="email" required />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-        <label for="program">Carrera:</label>
-        <input type="text" id="program" name="program" required>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>Lista de estudiantes</h1>
 
-        <label for="age">Edad:</label>
-        <input type="number" name="age" id="age" required>
+        <nav>
+          <a href="index.html">Estudiantes</a>
+          <a href="student-form.html">Agregar estudiante</a>
+        </nav>
+      </div>
+    </header>
 
-        <button type="submit">Guardar estudiante</button>
+    <main>
+      <div class="form-card">
+        <h2>Agregar estudiante</h2>
+        <p>Complete los datos del estudiante.</p>
 
-    </form>
+        <form id="studentForm" method="post">
+          <div class="form-group">
+            <label for="identification">Identificación:</label>
+            <input
+              type="number"
+              id="identification"
+              name="identification"
+              required
+            />
+          </div>
 
+          <div class="form-group">
+            <label for="name">Nombre Completo:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="program">Carrera:</label>
+            <select name="program" id="program">
+              <option value="Informática Empresarial">Informática Empresarial</option>
+              <option value="Administración">Administración</option>
+              <option value="Contabilidad">Contabilidad</option>
+              <option value="Ingeniería">Ingeniería</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="age">Edad:</label>
+            <input
+              type="number"
+              name="age"
+              id="age"
+              required
+              min="15"
+              max="100"
+            />
+          </div>
+
+          <div class="form-actions">
+            <a class="secondary-button" href="index.html">
+              Ver lista de estudiantes
+            </a>
+            <button type="submit">Guardar estudiante</button>
+          </div>
+        </form>
+      </div>
+    </main>
     <script src="app.js"></script>
-    <script> setupStudentForm(); </script>
-</body>
+    <script>
+      setupStudentForm();
+    </script>
+  </body>
 </html>
