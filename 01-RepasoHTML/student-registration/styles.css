@@ -98,6 +98,7 @@ button {
 
 .button-link:hover,
 button:hover {
+  color: #000000;
   background-position: right center;
 }
 
