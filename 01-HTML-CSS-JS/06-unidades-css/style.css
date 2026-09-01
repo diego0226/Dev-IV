@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.opinion{
+    width: 70%;
+    margin: 40px auto;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.titulo{
+    font-size: 2rem;
+}
+
+.texto{
+    font-size: 20px;
+}
+
+
