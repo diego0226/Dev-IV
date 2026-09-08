@@ -4,252 +4,317 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Artisan Crust - Panadería Artesanal</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
+    <meta
+      name="description"
+      content="Artisan Crust - Panadería artesanal con productos frescos y tradicionales."
     />
+    <title>Artisan Crust | Panadería Artesanal</title>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Literata:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
+
+<link rel="stylesheet" href="style.css" />
+
+
   </head>
 
   <body>
-    <!-- NAVBAR -->
-    <nav class="navbar">
-      <div class="navbar-container">
-        <a href="#" class="logo"> Artisan Crust </a>
+    <header class="header">
+      <div class="nav-container">
+        <a href="#inicio" class="logo">Artisan Crust</a>
 
-        <div class="nav-links">
-          <a href="#" class="active">Home</a>
-          <a href="#productos">Products</a>
-          <a href="#contacto">Contact</a>
-        </div>
-
-        <div class="nav-actions">
-          <button class="icon-button">
-            <span class="material-symbols-outlined"> shopping_basket </span>
-          </button>
-
-          <button class="menu-button">
-            <span class="material-symbols-outlined"> menu </span>
-          </button>
-        </div>
-      </div>
+    <nav class="nav-menu" id="nav-menu" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#nosotros">Sobre Nosotros</a>
+      <a href="#contacto">Contacto</a>
     </nav>
 
-    <main>
-      <!-- HERO -->
-      <section class="hero">
-        <h1>El Sabor de la Tradición en Cada Bocado</h1>
+    <button
+      class="menu-button"
+      id="menu-button"
+      type="button"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      aria-controls="nav-menu"
+    >
+      ☰
+    </button>
+  </div>
+</header>
 
-        <p>
-          Pan artesanal horneado fresco cada mañana. Utilizamos masa madre de
-          cultivo propio, ingredientes locales y mucho tiempo para asegurar una
-          textura y sabor inigualables.
-        </p>
+<main>
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <span class="hero-subtitle">PANADERÍA ARTESANAL</span>
 
-        <a href="#productos" class="primary-button"> Ver Nuestros Productos </a>
-      </section>
+      <h1>El Sabor de la Tradición en Cada Bocado</h1>
 
-      <!-- BANNER -->
-      <section class="image-banner">
-        <div class="hero-image"></div>
-      </section>
+      <p>
+        Elaboramos panes y productos de repostería artesanal con
+        ingredientes seleccionados y recetas tradicionales.
+      </p>
 
-      <!-- PRODUCTOS -->
-      <section class="products-section" id="productos">
-        <h2>Nuestros Productos</h2>
+      <a href="#productos" class="btn-primary">
+        Ver nuestros productos
+      </a>
+    </div>
 
-        <div class="products-grid">
-          <!-- PRODUCTO 1 -->
-          <article class="product-card">
-            <div class="product-image bread-image"></div>
+    <div class="hero-image-container">
+      <img
+        src="https://www.unileverfoodsolutions.com.mx/tendencias/tendencia-carta/novedades/pan/jcr:content/parsys/set1/row2/span12/textimage_copy_218978490/image.transform/jpeg-optimized/image.1592429873609.jpg"
+        alt="Pan artesanal recién horneado"
+      />
+    </div>
+  </section>
 
-            <div class="product-content">
-              <div>
-                <h3>Pan Artesanal</h3>
+  <section class="products-section" id="productos">
+    <div class="section-heading">
+      <span class="section-subtitle">NUESTROS PRODUCTOS</span>
 
-                <p>
-                  Nuestra especialidad. Elaborado con masa madre, fermentación
-                  lenta y harinas orgánicas para una corteza crujiente y miga
-                  tierna.
-                </p>
-              </div>
+      <h2>Hechos con pasión y dedicación</h2>
 
-              <div class="product-footer">
-                <span class="tag"> Vegano </span>
+      <p>
+        Cada producto es preparado cuidadosamente para ofrecer una
+        experiencia única en cada bocado.
+      </p>
+    </div>
 
-                <span class="price"> $6.00 </span>
-              </div>
-            </div>
-          </article>
-
-          <!-- PRODUCTO 2 -->
-          <article class="product-card">
-            <div class="product-image croissant-image"></div>
-
-            <div class="product-content">
-              <div>
-                <h3>Croissants</h3>
-
-                <p>
-                  Capas finas y crujientes de masa con auténtica mantequilla
-                  francesa. Un clásico vienés horneado a la perfección.
-                </p>
-              </div>
-
-              <div class="product-footer">
-                <span class="tag"> Clásico </span>
-
-                <span class="price"> $4.50 </span>
-              </div>
-            </div>
-          </article>
-
-          <!-- PRODUCTO 3 -->
-          <article class="product-card">
-            <div class="product-image pastry-image"></div>
-
-            <div class="product-content">
-              <div>
-                <h3>Pastelería Fina</h3>
-
-                <p>
-                  Una selección rotativa de tartas, eclairs y dulces delicados,
-                  creados con frutas de temporada y técnicas precisas.
-                </p>
-              </div>
-
-              <div class="product-footer">
-                <span class="price"> Desde $5.00 </span>
-              </div>
-            </div>
-          </article>
+    <div class="products-grid">
+      <article class="product-card">
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=800&q=80"
+            alt="Pan artesanal de masa madre"
+          />
         </div>
-      </section>
 
-      <!-- SOBRE NOSOTROS -->
-      <section class="about-section">
-        <div class="about-container">
-          <h2>Sobre Nosotros</h2>
+        <div class="product-content">
+          <span class="product-tag">PAN ARTESANAL</span>
+
+          <h3>Pan de Masa Madre</h3>
 
           <p>
-            Artisan Crust nació de una pasión familiar por el pan de verdad.
-            Creemos que la panadería es un arte que requiere paciencia, respeto
-            por los ingredientes y dedicación.
+            Pan elaborado con masa madre natural, corteza crujiente y un
+            interior suave.
           </p>
 
-          <p>
-            Nuestra misión es devolver a la mesa el sabor del pan tradicional,
-            sin conservantes ni atajos. Cada madrugada encendemos los hornos con
-            el mismo objetivo: ofrecerte lo mejor de nuestras manos.
-          </p>
-        </div>
-      </section>
-
-      <!-- CONTACTO -->
-      <section class="contact-section" id="contacto">
-        <div class="contact-info">
-          <h2>Visítanos</h2>
-
-          <p class="contact-description">
-            Estamos ubicados en el corazón del barrio, listos para recibirte con
-            el aroma a pan recién horneado.
-          </p>
-
-          <div class="contact-details">
-            <div class="contact-item">
-              <span class="material-symbols-outlined"> location_on </span>
-
-              <div>
-                <h4>Dirección</h4>
-
-                <p>
-                  123 Calle de la Masa<br />
-                  Barrio Antiguo, Ciudad
-                </p>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <span class="material-symbols-outlined"> schedule </span>
-
-              <div>
-                <h4>Horario</h4>
-
-                <p>
-                  Martes - Domingo: 7:00 AM - 6:00 PM<br />
-                  Lunes: Cerrado
-                </p>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <span class="material-symbols-outlined"> phone </span>
-
-              <div>
-                <h4>Teléfono</h4>
-
-                <p>+34 900 123 456</p>
-              </div>
-            </div>
+          <div class="product-bottom">
+            <span class="price">₡3.500</span>
           </div>
         </div>
+      </article>
 
-        <!-- FORMULARIO -->
-        <div class="form-container">
-          <form>
-            <h3>Haz un pedido especial</h3>
-
-            <div class="form-group">
-              <label for="name"> Nombre </label>
-
-              <input type="text" id="name" name="name" />
-            </div>
-
-            <div class="form-group">
-              <label for="email"> Correo Electrónico </label>
-
-              <input type="email" id="email" name="email" />
-            </div>
-
-            <div class="form-group">
-              <label for="message"> Mensaje </label>
-
-              <textarea id="message" name="message" rows="3"></textarea>
-            </div>
-
-            <button type="button" class="submit-button">Enviar Consulta</button>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footer-container">
-        <span class="footer-logo"> Artisan Crust </span>
-
-        <div class="footer-links">
-          <a href="#"> Privacy Policy </a>
-
-          <a href="#"> Terms of Service </a>
-
-          <a href="#"> Wholesale </a>
+      <article class="product-card">
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80"
+            alt="Croissant artesanal recién horneado"
+          />
         </div>
 
-        <p>© 2024 Artisan Crust Bakery. Crafted with tradition.</p>
+        <div class="product-content">
+          <span class="product-tag">REPOSTERÍA</span>
+
+          <h3>Croissant Artesanal</h3>
+
+          <p>
+            Croissant de mantequilla, ligero y crujiente, preparado
+            diariamente.
+          </p>
+
+          <div class="product-bottom">
+            <span class="price">₡2.000</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-image">
+          <img
+            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80"
+            alt="Pastel artesanal decorado"
+          />
+        </div>
+
+        <div class="product-content">
+          <span class="product-tag">ESPECIALIDAD</span>
+
+          <h3>Pastel Artesanal</h3>
+
+          <p>
+            Pasteles preparados con ingredientes frescos y decoración hecha
+            a mano.
+          </p>
+
+          <div class="product-bottom">
+            <span class="price">₡8.500</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="about-section" id="nosotros">
+    <div class="about-content">
+      <span class="section-subtitle">SOBRE NOSOTROS</span>
+
+      <h2>Tradición que se comparte</h2>
+
+      <p>
+        En Artisan Crust creemos que el pan es mucho más que un alimento.
+        Es tradición, familia y momentos para compartir.
+      </p>
+
+      <p>
+        Nuestro equipo trabaja cada día utilizando técnicas artesanales e
+        ingredientes seleccionados para ofrecer productos frescos y llenos
+        de sabor.
+      </p>
+
+      <ul class="about-list">
+        <li>Ingredientes cuidadosamente seleccionados</li>
+        <li>Elaboración artesanal diaria</li>
+        <li>Recetas tradicionales</li>
+        <li>Productos frescos y de calidad</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contacto">
+    <div class="contact-container">
+      <div class="contact-info">
+        <span class="section-subtitle">CONTÁCTANOS</span>
+
+        <h2>Estamos para servirte</h2>
+
+        <p>Visítanos o escríbenos. Será un placer atenderte.</p>
+
+        <div class="contact-item">
+          <h3>Dirección</h3>
+          <address>Avenida Central, San José, Costa Rica</address>
+        </div>
+
+        <div class="contact-item">
+          <h3>Horario</h3>
+
+          <ul class="schedule-list">
+            <li>Lunes a sábado</li>
+            <li>7:00 a.m. - 6:00 p.m.</li>
+          </ul>
+        </div>
+
+        <div class="contact-item">
+          <h3>Teléfono</h3>
+
+          <p>
+            <a href="tel:+50622222222">+506 2222-2222</a>
+          </p>
+        </div>
       </div>
-    </footer>
+
+      <div class="form-container">
+        <h2>Envíanos un mensaje</h2>
+
+        <p class="required-message">
+          Los campos marcados con * son obligatorios.
+        </p>
+
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="nombre">Nombre *</label>
+
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              required
+              autocomplete="name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="correo">Correo electrónico *</label>
+
+            <input
+              type="email"
+              id="correo"
+              name="correo"
+              required
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje *</label>
+
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-button">
+            Enviar mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <a href="#inicio" class="logo">Artisan Crust</a>
+
+      <p>Panadería artesanal hecha con pasión.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#privacidad">Política de privacidad</a>
+      <a href="#terminos">Términos y condiciones</a>
+    </div>
+
+    <div class="footer-copy">
+      <p>&copy; 2026 Artisan Crust. Todos los derechos reservados.</p>
+    </div>
+  </div>
+
+  <div class="footer-sources">
+    <p>Fuentes de imágenes:</p>
+
+    <ul>
+      <li>
+        <a
+          href="https://www.unileverfoodsolutions.com.mx/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Unilever Food Solutions
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://unsplash.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Unsplash
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
   </body>
 </html>

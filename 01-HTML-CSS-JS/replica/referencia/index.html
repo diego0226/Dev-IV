@@ -1,0 +1,553 @@
+<!doctype html>
+
+<html class="light" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Artisan Crust - Panadería Artesanal</title>
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&amp;family=Work+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              background: "#fff8f6",
+              "on-primary-fixed": "#2b1611",
+              primary: "#361f1a",
+              "on-primary-fixed-variant": "#5c403a",
+              "secondary-fixed": "#f7e0b5",
+              "inverse-surface": "#362f2d",
+              "secondary-fixed-dim": "#dac49b",
+              "on-primary": "#ffffff",
+              "surface-tint": "#755750",
+              "surface-dim": "#e5d7d4",
+              "surface-container-highest": "#eddfdd",
+              "surface-bright": "#fff8f6",
+              "on-secondary-fixed-variant": "#544525",
+              "on-error-container": "#93000a",
+              "on-tertiary-fixed-variant": "#484828",
+              "surface-container-lowest": "#ffffff",
+              "inverse-primary": "#e5beb5",
+              "on-error": "#ffffff",
+              "tertiary-container": "#aead85",
+              "on-background": "#211a19",
+              "error-container": "#ffdad6",
+              secondary: "#6d5c3a",
+              "surface-container-high": "#f3e5e2",
+              "surface-container": "#f9ebe8",
+              "on-primary-container": "#c19c94",
+              "outline-variant": "#d4c3bf",
+              tertiary: "#60603e",
+              surface: "#fff8f6",
+              "on-tertiary-container": "#414121",
+              "primary-container": "#4e342e",
+              "surface-variant": "#eddfdd",
+              "surface-container-low": "#fff1ee",
+              error: "#ba1a1a",
+              "on-surface": "#211a19",
+              "on-surface-variant": "#504442",
+              "on-tertiary-fixed": "#1d1d03",
+              "secondary-container": "#f4ddb2",
+              "on-secondary-container": "#71613e",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed": "#e6e5b9",
+              "tertiary-fixed-dim": "#cac99f",
+              "on-tertiary": "#ffffff",
+              outline: "#827471",
+              "inverse-on-surface": "#fceeeb",
+              "on-secondary-fixed": "#251a01",
+              "primary-fixed-dim": "#e5beb5",
+              "primary-fixed": "#ffdad2",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "margin-desktop": "64px",
+              xs: "4px",
+              gutter: "24px",
+              md: "24px",
+              base: "8px",
+              sm: "12px",
+              "margin-mobile": "16px",
+              xl: "80px",
+              lg: "48px",
+            },
+            fontFamily: {
+              "display-lg": ["literata"],
+              "headline-sm": ["literata"],
+              caption: ["workSans"],
+              "body-lg": ["workSans"],
+              "display-lg-mobile": ["literata"],
+              "headline-md": ["literata"],
+              "label-md": ["workSans"],
+              "body-md": ["workSans"],
+            },
+            fontSize: {
+              "display-lg": [
+                "48px",
+                {
+                  lineHeight: "56px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-sm": [
+                "24px",
+                {
+                  lineHeight: "32px",
+                  fontWeight: "600",
+                },
+              ],
+              caption: [
+                "12px",
+                {
+                  lineHeight: "16px",
+                  fontWeight: "400",
+                },
+              ],
+              "body-lg": [
+                "18px",
+                {
+                  lineHeight: "28px",
+                  fontWeight: "400",
+                },
+              ],
+              "display-lg-mobile": [
+                "36px",
+                {
+                  lineHeight: "44px",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-md": [
+                "32px",
+                {
+                  lineHeight: "40px",
+                  fontWeight: "600",
+                },
+              ],
+              "label-md": [
+                "14px",
+                {
+                  lineHeight: "20px",
+                  letterSpacing: "0.05em",
+                  fontWeight: "600",
+                },
+              ],
+              "body-md": [
+                "16px",
+                {
+                  lineHeight: "24px",
+                  fontWeight: "400",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background-color: #fff8f6; /* bg-background */
+      }
+      .soft-shadow {
+        box-shadow: 0 4px 12px rgba(78, 52, 46, 0.08); /* Primary tint shadow */
+      }
+    </style>
+  </head>
+  <body
+    class="font-body-md text-on-background antialiased selection:bg-secondary-fixed selection:text-on-secondary-fixed"
+  >
+    <!-- TopNavBar -->
+    <nav class="bg-background dark:bg-background w-full top-0 sticky z-50">
+      <div
+        class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop flex justify-between items-center h-20 bg-background dark:bg-background"
+      >
+        <a
+          class="font-display-lg text-display-lg text-primary dark:text-primary-fixed-dim tracking-tight"
+          href="#"
+          >Artisan Crust</a
+        >
+        <div class="hidden md:flex gap-gutter items-center">
+          <a
+            class="text-primary dark:text-primary-fixed-dim font-bold border-b-2 border-primary dark:border-primary-fixed-dim pb-1 hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200 active:opacity-80 transition-opacity"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="text-on-primary-fixed-variant dark:text-on-primary-fixed-variant font-medium hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200 active:opacity-80 transition-opacity"
+            href="#productos"
+            >Products</a
+          >
+          <a
+            class="text-on-primary-fixed-variant dark:text-on-primary-fixed-variant font-medium hover:text-primary dark:hover:text-primary-fixed-dim transition-colors duration-200 active:opacity-80 transition-opacity"
+            href="#contacto"
+            >Contact</a
+          >
+        </div>
+        <div class="flex items-center gap-base">
+          <button
+            class="text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity p-xs"
+          >
+            <span class="material-symbols-outlined" data-icon="shopping_basket"
+              >shopping_basket</span
+            >
+          </button>
+          <!-- Mobile Menu Toggle -->
+          <button class="md:hidden text-primary p-xs">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-xl md:py-32 flex flex-col items-center text-center"
+      >
+        <h1
+          class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary max-w-4xl mb-md"
+        >
+          El Sabor de la Tradición en Cada Bocado
+        </h1>
+        <p
+          class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-lg"
+        >
+          Pan artesanal horneado fresco cada mañana. Utilizamos masa madre de
+          cultivo propio, ingredientes locales y mucho tiempo para asegurar una
+          textura y sabor inigualables.
+        </p>
+        <a
+          class="inline-flex items-center justify-center px-lg py-sm bg-primary-container text-on-primary rounded-DEFAULT font-label-md text-label-md hover:opacity-90 transition-opacity"
+          href="#productos"
+        >
+          Ver Nuestros Productos
+        </a>
+      </section>
+      <!-- Image Banner -->
+      <div
+        class="w-full max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop mb-xl"
+      >
+        <div
+          class="bg-cover bg-center w-full h-[400px] rounded-lg soft-shadow"
+          data-alt="A close-up, high-fidelity photograph of a freshly baked artisan sourdough loaf sitting on a rustic wooden table in a brightly lit bakery. The crust is deeply caramelized and flaky, dusted lightly with flour. The background is softly blurred, showing hints of a warm, creamy off-white kitchen setting. The lighting is natural and bright, emphasizing the tactile warmth of the bread. Minimalist, high-end culinary photography aesthetic."
+          style="
+            background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBNQNP5-B3smXWDtGGf-vQV-6MWaKjltyLRubxntpqWxVdUDzHVYZSuLt3-9asX4saxerPLx_ltSNKgbOdGWAd8UBirxakFqoiAVFAygM5eO0DxDHw5fBC1CELWHLc2foBjvom7drRVEDYEs06-s5GB8Xwm8WYSCjFCeBrSxKop8_KPunIWgBCcojWuQJ8WIdO60BNeOL2uE8cDnnRJwUb_VdUNhuKwQYxd18HUKjUAnFi69ko_oUKUag&quot;);
+          "
+        ></div>
+      </div>
+      <!-- Nuestros Productos Section -->
+      <section
+        class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-xl"
+        id="productos"
+      >
+        <h2
+          class="font-headline-md text-headline-md text-primary text-center mb-lg"
+        >
+          Nuestros Productos
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+          <!-- Product Card 1 -->
+          <div
+            class="bg-surface rounded-lg soft-shadow flex flex-col overflow-hidden border border-secondary-fixed-dim"
+          >
+            <div
+              class="bg-cover bg-center h-64 w-full"
+              data-alt="A beautiful, overhead shot of three rustic sourdough baguettes lying side-by-side on a cool marble surface. The golden-brown crusts feature deep slashes, and a fine dusting of flour rests on the surface. Warm, natural light spills across the frame, highlighting the texture. The aesthetic is clean, minimalist, and artisanal, perfectly matching a high-end neighborhood bakery."
+              style="
+                background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuA0USEQ5S7MuaaJ0J3y1QI7xKoEmX61T9rc1AcHpfvBI0oysEhCUsyud8lhBOFsKJ8752_5uf7RhYFciMkrD0vGgfQKoK3JIrfaUkCW8LORa8n4Mg2JZq3mFKR4kRp6Wqf5-V10U1aiYf1nASEFraNsVt6sFPEFJpz-2xiuPgqIaoj25911t7MpRtqXdWDhZ-xj8OG5MP49_p3BpoFeLIfFJdZr1frrRzE9j08gLrRWzC_5HIAQX9iFRg&quot;);
+              "
+            ></div>
+            <div
+              class="p-md flex-grow flex flex-col justify-between bg-surface-container-lowest"
+            >
+              <div>
+                <h3
+                  class="font-headline-sm text-headline-sm text-primary mb-sm"
+                >
+                  Pan Artesanal
+                </h3>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant mb-md"
+                >
+                  Nuestra especialidad. Elaborado con masa madre, fermentación
+                  lenta y harinas orgánicas para una corteza crujiente y miga
+                  tierna.
+                </p>
+              </div>
+              <div class="flex items-center gap-xs mt-auto">
+                <span
+                  class="inline-block px-sm py-xs bg-secondary-fixed text-on-secondary-fixed-variant rounded-full font-caption text-caption"
+                  >Vegano</span
+                >
+                <span
+                  class="font-body-md text-body-md text-primary ml-auto font-bold"
+                  >$6.00</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Product Card 2 -->
+          <div
+            class="bg-surface rounded-lg soft-shadow flex flex-col overflow-hidden border border-secondary-fixed-dim"
+          >
+            <div
+              class="bg-cover bg-center h-64 w-full"
+              data-alt="A macro shot of a perfectly laminated, golden-brown croissant sitting on a clean, creamy white plate. The flaky layers are clearly visible, catching the soft morning light. The background is simple and uncluttered, emphasizing the buttery perfection of the pastry. The mood is warm, inviting, and highly textured, fitting a minimalist artisanal brand."
+              style="
+                background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuBub8oV5iuOePi4eF7ogOD8cAiAi9nLduIrZNGmm9lhY44N87CW44ddpmR6pnSUzPYUQl7FgO2UAVqZ5mrBQxiBdDlqsN8xuYYueqZll4DLgX6XpFBfDvJ1aggFPe3nlxNfMhTJUpqExfZUPuc67c-BjHM1Sh6UdmodkFgXwtXosid9BgYiHkRyGF_4-J3tRLcAf6fMYGPrsNA_EZ-WIio1yemEqLTUsPJkWI7oBDtqRemWRZ5mUhe3fA&quot;);
+              "
+            ></div>
+            <div
+              class="p-md flex-grow flex flex-col justify-between bg-surface-container-lowest"
+            >
+              <div>
+                <h3
+                  class="font-headline-sm text-headline-sm text-primary mb-sm"
+                >
+                  Croissants
+                </h3>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant mb-md"
+                >
+                  Capas finas y crujientes de masa con auténtica mantequilla
+                  francesa. Un clásico vienés horneado a la perfección.
+                </p>
+              </div>
+              <div class="flex items-center gap-xs mt-auto">
+                <span
+                  class="inline-block px-sm py-xs bg-secondary-fixed text-on-secondary-fixed-variant rounded-full font-caption text-caption"
+                  >Clásico</span
+                >
+                <span
+                  class="font-body-md text-body-md text-primary ml-auto font-bold"
+                  >$4.50</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Product Card 3 -->
+          <div
+            class="bg-surface rounded-lg soft-shadow flex flex-col overflow-hidden border border-secondary-fixed-dim"
+          >
+            <div
+              class="bg-cover bg-center h-64 w-full"
+              data-alt="A delicate display of fine pastries, including fruit tarts and eclairs, arranged symmetrically on a minimalist wooden board against a warm, off-white background. The lighting is soft and high-key, highlighting the glossy fruit glazes and intricate details of the pastries. The overall aesthetic is elegant, clean, and appetizing, reflecting a premium bakery style."
+              style="
+                background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuCLMgNgwUYO5AZfrqR4uErjYcuCOI2o6I-IRVKRXbewGrfUDi3aS_1XqTifBzBroN0buCAanlmt8_hp4KrURzpLnfzZ01OTjE-e3OIAT6zR7SwMAsOZGEzvn0FOvRAZ1IDm72RXapiLLsAq66TmHZBTP0ECRfh-soM7UfsySdiPc-eRjCgg5caKCGMfeKh3cvDY1zZqc-1x4ZiWZKzNl5t6-kd09VJaO-ecdE3gYOzZI9uiA_bbIB48rg&quot;);
+              "
+            ></div>
+            <div
+              class="p-md flex-grow flex flex-col justify-between bg-surface-container-lowest"
+            >
+              <div>
+                <h3
+                  class="font-headline-sm text-headline-sm text-primary mb-sm"
+                >
+                  Pastelería Fina
+                </h3>
+                <p
+                  class="font-body-md text-body-md text-on-surface-variant mb-md"
+                >
+                  Una selección rotativa de tartas, eclairs y dulces delicados,
+                  creados con frutas de temporada y técnicas precisas.
+                </p>
+              </div>
+              <div class="flex items-center gap-xs mt-auto">
+                <span
+                  class="font-body-md text-body-md text-primary ml-auto font-bold"
+                  >Desde $5.00</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Sobre Nosotros -->
+      <section class="bg-surface-container-low py-xl">
+        <div
+          class="max-w-4xl mx-auto px-margin-mobile md:px-margin-desktop text-center"
+        >
+          <h2 class="font-headline-md text-headline-md text-primary mb-lg">
+            Sobre Nosotros
+          </h2>
+          <p class="font-body-lg text-body-lg text-on-surface-variant mb-md">
+            Artisan Crust nació de una pasión familiar por el pan de verdad.
+            Creemos que la panadería es un arte que requiere paciencia, respeto
+            por los ingredientes y dedicación.
+          </p>
+          <p class="font-body-lg text-body-lg text-on-surface-variant">
+            Nuestra misión es devolver a la mesa el sabor del pan tradicional,
+            sin conservantes ni atajos. Cada madrugada encendemos los hornos con
+            el mismo objetivo: ofrecerte lo mejor de nuestras manos.
+          </p>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section
+        class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-xl flex flex-col md:flex-row gap-xl"
+        id="contacto"
+      >
+        <div class="md:w-1/2">
+          <h2 class="font-headline-md text-headline-md text-primary mb-md">
+            Visítanos
+          </h2>
+          <p
+            class="font-body-md text-body-md text-on-surface-variant mb-lg max-w-sm"
+          >
+            Estamos ubicados en el corazón del barrio, listos para recibirte con
+            el aroma a pan recién horneado.
+          </p>
+          <div class="flex flex-col gap-md">
+            <div class="flex items-start gap-sm">
+              <span class="material-symbols-outlined text-primary-container"
+                >location_on</span
+              >
+              <div>
+                <h4 class="font-label-md text-label-md text-primary">
+                  Dirección
+                </h4>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  123 Calle de la Masa<br />Barrio Antiguo, Ciudad
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-sm">
+              <span class="material-symbols-outlined text-primary-container"
+                >schedule</span
+              >
+              <div>
+                <h4 class="font-label-md text-label-md text-primary">
+                  Horario
+                </h4>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  Martes - Domingo: 7:00 AM - 6:00 PM<br />Lunes: Cerrado
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-sm">
+              <span class="material-symbols-outlined text-primary-container"
+                >phone</span
+              >
+              <div>
+                <h4 class="font-label-md text-label-md text-primary">
+                  Teléfono
+                </h4>
+                <p class="font-body-md text-body-md text-on-surface-variant">
+                  +34 900 123 456
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="md:w-1/2 bg-surface-container rounded-lg p-lg border border-secondary-fixed-dim"
+        >
+          <form class="flex flex-col gap-md">
+            <h3 class="font-headline-sm text-headline-sm text-primary mb-sm">
+              Haz un pedido especial
+            </h3>
+            <div>
+              <label
+                class="block font-label-md text-label-md text-primary mb-xs"
+                for="name"
+                >Nombre</label
+              >
+              <input
+                class="w-full bg-surface-bright border border-secondary-fixed-dim rounded-DEFAULT px-sm py-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary font-body-md text-body-md text-on-surface"
+                id="name"
+                type="text"
+              />
+            </div>
+            <div>
+              <label
+                class="block font-label-md text-label-md text-primary mb-xs"
+                for="email"
+                >Correo Electrónico</label
+              >
+              <input
+                class="w-full bg-surface-bright border border-secondary-fixed-dim rounded-DEFAULT px-sm py-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary font-body-md text-body-md text-on-surface"
+                id="email"
+                type="email"
+              />
+            </div>
+            <div>
+              <label
+                class="block font-label-md text-label-md text-primary mb-xs"
+                for="message"
+                >Mensaje</label
+              >
+              <textarea
+                class="w-full bg-surface-bright border border-secondary-fixed-dim rounded-DEFAULT px-sm py-sm focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary font-body-md text-body-md text-on-surface"
+                id="message"
+                rows="3"
+              ></textarea>
+            </div>
+            <button
+              class="mt-sm bg-primary-container text-on-primary font-label-md text-label-md py-sm rounded-DEFAULT hover:opacity-90 transition-opacity"
+              type="button"
+            >
+              Enviar Consulta
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer
+      class="bg-surface-container-low dark:bg-surface-container-low w-full mt-xl border-t border-outline-variant dark:border-outline-variant transition-all duration-300"
+    >
+      <div
+        class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-lg flex flex-col md:flex-row justify-between items-center gap-md"
+      >
+        <span
+          class="font-display-lg text-display-lg text-primary text-center md:text-left"
+          >Artisan Crust</span
+        >
+        <div class="flex gap-md font-body-md text-body-md">
+          <a
+            class="text-on-surface-variant dark:text-on-surface-variant hover:underline decoration-primary decoration-2 underline-offset-4 transition-all duration-300"
+            href="#"
+            >Privacy Policy</a
+          >
+          <a
+            class="text-on-surface-variant dark:text-on-surface-variant hover:underline decoration-primary decoration-2 underline-offset-4 transition-all duration-300"
+            href="#"
+            >Terms of Service</a
+          >
+          <a
+            class="text-on-surface-variant dark:text-on-surface-variant hover:underline decoration-primary decoration-2 underline-offset-4 transition-all duration-300"
+            href="#"
+            >Wholesale</a
+          >
+        </div>
+        <p
+          class="font-body-md text-body-md text-primary dark:text-primary-fixed-dim text-center md:text-right text-sm"
+        >
+          © 2024 Artisan Crust Bakery. Crafted with tradition.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
