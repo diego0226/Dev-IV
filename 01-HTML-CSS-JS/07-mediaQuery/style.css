@@ -1,0 +1,28 @@
+.media {
+    width: 100%;
+    height: 300px;
+}
+
+@media (min-width: 319px) and (max-width: 480px) {
+    .media {
+        background-color: lightsalmon;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+    .media {
+        background-color: powderblue;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .media {
+        background-color: limegreen;
+    }
+}
+
+@media (min-width: 1601px) {
+    .media {
+        background-color: seagreen;
+    }
+}
