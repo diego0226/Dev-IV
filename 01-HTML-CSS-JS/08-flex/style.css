@@ -1,0 +1,41 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+    gap: 4rem;
+    width: 600px;
+    height: 400px;
+    border: 2px solid;
+}
+
+.item{
+    border: 1px solid;
+}
+
+.item-1{
+    background-color: blue;
+    flex-grow: 1;
+}
+
+.item-2{
+    background-color: white;
+    flex-shrink: 3px;
+}
+
+.item-3{
+    background-color: red;
+    flex: 1 1 200px;
+}
+
+.item-4{
+    background-color: white;
+    align-self: flex-end;
+}
+
+.item-5{
+    background-color: blue;
+    order: 1;
+}
