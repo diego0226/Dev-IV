@@ -1,11 +1,14 @@
-import React from 'react'
+import "./Logo.css";
 
 const Logo = () => {
-	return (
-		<div>
-			Logo
-		</div>
-	)
-}
+  return (
+    <div className="logo">
+      <span>D</span>
+      <span>
+        Diego <small>Motors</small>
+      </span>
+    </div>
+  );
+};
 
-export default Logo
+export default Logo;

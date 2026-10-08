@@ -1,0 +1,3 @@
+.navbar + main { min-height: calc(100vh - 78px); }
+
+.navbar + main > .home-page { overflow: hidden; }

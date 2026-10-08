@@ -1,8 +1,8 @@
-import React from 'react'
+import './ContactForm.css'
 
 const ContactForm = () => {
 	return (
-		<div>
+		<div className="contact-form">
 			ContactForm
 		</div>
 	)

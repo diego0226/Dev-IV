@@ -1,0 +1,14 @@
+.hero { position: relative; min-height: min(700px, calc(100vh - 78px)); isolation: isolate; }
+.hero__surface { position: relative; display: grid; min-height: inherit; align-items: center; overflow: hidden; border-bottom: 1px solid rgba(231, 220, 197, .11); }
+.hero__surface::before { position: absolute; z-index: -2; inset: 0; content: ''; background: linear-gradient(90deg, #111210 18%, rgba(17, 18, 16, .7) 53%, rgba(17, 18, 16, .16)), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1800&q=85') center/cover; filter: saturate(.68) contrast(1.06); }
+.hero__surface::after { position: absolute; z-index: -1; right: -5vw; bottom: -8rem; width: min(44vw, 630px); aspect-ratio: 1; content: ''; border: 1px solid rgba(216, 183, 113, .24); border-radius: 50%; box-shadow: 0 0 0 5rem rgba(216, 183, 113, .035), 0 0 0 10rem rgba(216, 183, 113, .025); }
+.hero__content { padding-block: 8rem; }
+.hero__content > p:first-child { margin: 0 0 1.45rem; color: #dcc184; font-family: 'DM Mono', monospace; font-size: .67rem; letter-spacing: .18em; text-transform: uppercase; }
+.hero h1 { max-width: 690px; margin: 0; color: #fbf8f1; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(3.35rem, 7vw, 6.4rem); font-weight: 500; letter-spacing: -.065em; line-height: .98; }
+.hero__content > p:nth-of-type(2) { max-width: 530px; margin: 2rem 0 0; color: #d0cac0; font-size: clamp(.98rem, 1.3vw, 1.1rem); line-height: 1.8; }
+.hero__actions { display: flex; flex-wrap: wrap; gap: .85rem; margin-top: 2.7rem; }
+.hero__actions a { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: .7rem 1.35rem; border: 1px solid rgba(228, 215, 188, .35); color: #f7f2e9; font-size: .71rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; transition: transform .25s ease, background .25s ease, border-color .25s ease; }
+.hero__actions a:first-child { border-color: #d5b36b; background: #d5b36b; color: #171510; }
+.hero__actions a:hover { border-color: #edd596; background: rgba(237, 213, 150, .15); transform: translateY(-3px); }
+.hero__actions a:first-child:hover { background: #e6c982; }
+@media (max-width: 640px) { .hero { min-height: 610px; } .hero__content { padding-block: 6rem; } .hero__surface::before { background: linear-gradient(90deg, rgba(17, 18, 16, .94), rgba(17, 18, 16, .58)), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=85') center/cover; } }

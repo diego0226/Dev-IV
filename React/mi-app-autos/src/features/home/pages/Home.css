@@ -1,0 +1,24 @@
+.home-page { display: block; }
+
+.featured-cars { padding-top: 7.5rem; }
+
+.featured-cars > h2 { display: inline-block; }
+
+.featured-cars > a {
+  float: right;
+  margin-top: 1.35rem;
+  padding-bottom: .35rem;
+  border-bottom: 1px solid #b99858;
+  color: #d9bb7c;
+  font-size: .69rem;
+  font-weight: 700;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+  transition: color .2s ease;
+}
+
+.featured-cars > a:hover { color: #fff1c9; }
+
+.featured-cars .car-card-list { clear: both; margin-top: 3.25rem; }
+
+@media (max-width: 620px) { .featured-cars { padding-top: 5.3rem; } .featured-cars > a { float: none; display: block; width: fit-content; margin-top: 1.5rem; } }

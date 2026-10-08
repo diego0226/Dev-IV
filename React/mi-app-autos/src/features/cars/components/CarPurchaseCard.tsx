@@ -1,8 +1,8 @@
-import React from 'react'
+import './CarPurchaseCard.css'
 
 const CarPurchaseCard = () => {
 	return (
-		<div>
+		<div className="car-purchase-card">
 			CarPurchaseCard
 		</div>
 	)

@@ -1,8 +1,8 @@
-import React from 'react'
+import './CarDetail.css'
 
 const CarDetail = () => {
 	return (
-		<div>
+		<div className="car-detail-page">
 			CarDetail
 		</div>
 	)

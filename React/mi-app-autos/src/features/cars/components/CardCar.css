@@ -1,0 +1,25 @@
+.car-card {
+  overflow: hidden;
+  border: 1px solid rgba(231, 220, 197, .12);
+  background: #171815;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, .12);
+  transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+
+.car-card:hover { border-color: rgba(213, 179, 107, .55); box-shadow: 0 26px 45px rgba(0, 0, 0, .3); transform: translateY(-7px); }
+.car-card__media { position: relative; aspect-ratio: 1.52 / 1; overflow: hidden; background: #272822; }
+.car-card__media img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.78) contrast(1.05); transition: transform .6s cubic-bezier(.2, .75, .2, 1), filter .3s ease; }
+.car-card:hover .car-card__media img { filter: saturate(1) contrast(1.03); transform: scale(1.055); }
+.car-card__media span { position: absolute; top: 1rem; color: #f6edda; font-family: 'DM Mono', monospace; font-size: .59rem; letter-spacing: .13em; text-transform: uppercase; }
+.car-card__media span:first-of-type { left: 1rem; padding: .42rem .6rem; background: rgba(20, 20, 18, .78); backdrop-filter: blur(6px); }
+.car-card__media span:last-child { right: 1rem; display: grid; width: 2rem; aspect-ratio: 1; place-items: center; border: 1px solid rgba(245, 237, 218, .42); border-radius: 50%; font-family: Arial, sans-serif; font-size: 1.05rem; letter-spacing: 0; transition: background .2s ease; }
+.car-card__media span:last-child:hover { background: rgba(213, 179, 107, .34); }
+.car-card__content { padding: 1.3rem 1.3rem 1.4rem; }
+.car-card__content > p { margin: 0; color: #aaa297; font-family: 'DM Mono', monospace; font-size: .58rem; letter-spacing: .08em; text-transform: uppercase; }
+.car-card h3 { margin: .52rem 0 1.15rem; color: #f2efe9; font-family: 'Playfair Display', Georgia, serif; font-size: 1.65rem; font-weight: 500; letter-spacing: -.045em; }
+.car-card__specs { display: flex; flex-wrap: wrap; gap: .45rem .85rem; padding-block: .95rem; border-block: 1px solid rgba(231, 220, 197, .11); color: #b9b2a5; font-family: 'DM Mono', monospace; font-size: .58rem; letter-spacing: .02em; }
+.car-card__specs span + span { padding-left: .85rem; border-left: 1px solid rgba(231, 220, 197, .17); }
+.car-card__footer { display: flex; align-items: center; justify-content: space-between; gap: .75rem; margin-top: 1.2rem; }
+.car-card__footer strong { color: #dfc284; font-family: 'DM Mono', monospace; font-size: .75rem; font-weight: 500; letter-spacing: .03em; }
+.car-card__footer a { color: #e6dfd1; font-size: .66rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; transition: color .2s ease; }
+.car-card__footer a:hover { color: #dabc79; }

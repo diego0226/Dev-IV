@@ -1,0 +1,12 @@
+.experience { margin-top: 7.5rem; padding-block: 7.5rem; border-top: 1px solid rgba(231, 220, 197, .12); border-bottom: 1px solid rgba(231, 220, 197, .12); }
+.experience__grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr); align-items: center; gap: clamp(2.5rem, 7vw, 7rem); }
+.experience__image { min-height: 440px; background: linear-gradient(0deg, rgba(14, 15, 13, .25), rgba(14, 15, 13, .06)), url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1100&q=85') center/cover; box-shadow: 22px 22px 0 -1px #101110, 22px 22px 0 0 #bfa167; }
+.eyebrow, .featured-cars > p { margin: 0 0 .9rem; color: #c9a96a; font-family: 'DM Mono', monospace; font-size: .65rem; letter-spacing: .18em; text-transform: uppercase; }
+.experience h2, .featured-cars h2 { margin: 0; color: #f7f3ea; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2.25rem, 4vw, 3.5rem); font-weight: 500; letter-spacing: -.05em; line-height: 1.05; }
+.experience__content > p:not(.eyebrow) { max-width: 32rem; margin: 1.5rem 0 0; color: #bdb7ac; font-size: .98rem; line-height: 1.85; }
+.check-list { display: grid; gap: .82rem; margin: 2rem 0; padding: 0; list-style: none; }
+.check-list li { display: flex; align-items: center; gap: .75rem; color: #ddd7ca; font-size: .87rem; }
+.check-list li::before { display: grid; width: 1.35rem; aspect-ratio: 1; place-items: center; border: 1px solid rgba(203, 170, 102, .6); content: '✓'; color: #dab975; font-size: .68rem; }
+.text-link { display: inline-flex; padding-bottom: .35rem; border-bottom: 1px solid #bd9c5d; color: #ead5a5; font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; transition: color .2s ease, padding .2s ease; }
+.text-link:hover { padding-right: .35rem; color: #fff6df; }
+@media (max-width: 750px) { .experience { margin-top: 5rem; padding-block: 5rem; } .experience__grid { grid-template-columns: 1fr; } .experience__image { min-height: 310px; margin-right: 1.35rem; } }

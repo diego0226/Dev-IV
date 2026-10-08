@@ -1,0 +1,232 @@
+[
+  {
+    "id": 1,
+    "name": "BMW X7",
+    "location": "San José, Costa Rica",
+    "price": 32800,
+    "year": 2024,
+    "mileage": 12500,
+    "seats": 7,
+    "type": "SUV",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY4q-SbOCO4XUhNhFbYflHdwQmWnBddxkY0oLr7U1BOQ&s=10",
+    "featured": true,
+    "description": "SUV versátil con espacio para siete pasajeros y equipamiento pensado para viajes largos.",
+    "features": [
+      "Cámara de reversa",
+      "Asientos de cuero",
+      "Control de crucero",
+      "Pantalla táctil"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Mistral S",
+    "location": "Heredia, Costa Rica",
+    "price": 24900,
+    "year": 2023,
+    "mileage": 18200,
+    "seats": 5,
+    "type": "Sedán",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB2ZslioQQiaIg2tB9OtBrzCA8gzKI4zUtQMoODVwU8EXd2-9wSuSiQXZZ&s=10",
+    "featured": true,
+    "description": "Sedán cómodo para la ciudad, con una conducción suave y una cabina espaciosa.",
+    "features": [
+      "Sensores de estacionamiento",
+      "Aire acondicionado",
+      "Conectividad Bluetooth",
+      "Control de estabilidad"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Vento GT",
+    "location": "Alajuela, Costa Rica",
+    "price": 47800,
+    "year": 2024,
+    "mileage": 7000,
+    "seats": 4,
+    "type": "Deportivo",
+    "image": "https://acnews.blob.core.windows.net/imgnews/large/NAZ_4d868e719b9b444aa277b5b7f4af731c.jpg",
+    "featured": true,
+    "description": "Diseño deportivo con detalles de alto contraste y respuesta ágil.",
+    "features": [
+      "Modos de manejo",
+      "Faros LED",
+      "Asientos deportivos",
+      "Cámara de reversa"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Lumen E",
+    "location": "Cartago, Costa Rica",
+    "price": 38600,
+    "year": 2025,
+    "mileage": 3900,
+    "seats": 5,
+    "type": "Eléctrico",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSou0nCIkGklogpdJr3QK-RHeI7esO_1JJx93tR3qwgm_nuLRTLDfGU63IL&s=10",
+    "featured": false,
+    "description": "Modelo eléctrico con interior moderno y conducción silenciosa.",
+    "features": [
+      "Carga rápida",
+      "Pantalla digital",
+      "Frenado regenerativo",
+      "Asistente de carril"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Terran Family",
+    "location": "San José, Costa Rica",
+    "price": 29500,
+    "year": 2022,
+    "mileage": 26800,
+    "seats": 7,
+    "type": "SUV",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-qGuHr0bMnCeQtFvGfLUvJZL6KUivF5830GKGsv6qIg&s",
+    "featured": false,
+    "description": "SUV familiar con tercera fila y espacio de carga adaptable.",
+    "features": [
+      "Tercera fila",
+      "Climatizador",
+      "Control de estabilidad",
+      "Cámara de reversa"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Norte City",
+    "location": "Puntarenas, Costa Rica",
+    "price": 18900,
+    "year": 2023,
+    "mileage": 21500,
+    "seats": 5,
+    "type": "Sedán",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWVMFYWyGbign_Xi12CxTUMgmqOHKhQLJw9AUOvCkLEg&s",
+    "featured": false,
+    "description": "Sedán compacto de fácil manejo para trayectos cotidianos.",
+    "features": [
+      "Pantalla táctil",
+      "Bluetooth",
+      "Sensores traseros",
+      "Aire acondicionado"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Sierra Cross",
+    "location": "Cartago, Costa Rica",
+    "price": 31900,
+    "year": 2024,
+    "mileage": 14600,
+    "seats": 5,
+    "type": "Crossover",
+    "image": "https://www.toyotacr.com/uploads/characteristics/244f7d89e3fd38dd5774564a8efb279b5cada37d.jpeg",
+    "featured": false,
+    "description": "Crossover para recorridos urbanos y escapadas de fin de semana.",
+    "features": [
+      "Cámara de reversa",
+      "Control de crucero",
+      "Faros LED",
+      "Climatizador"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Brisa Hybrid",
+    "location": "Heredia, Costa Rica",
+    "price": 34200,
+    "year": 2025,
+    "mileage": 6200,
+    "seats": 5,
+    "type": "Híbrido",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6YDmJyduXE6wm0ZtjQgrI599f472PdtrMDXD7d5tQEB2AlwgDR82KdJR5&s=10",
+    "featured": false,
+    "description": "Sedán híbrido con una cabina cómoda y equipamiento para el uso diario.",
+    "features": [
+      "Sistema híbrido",
+      "Frenado regenerativo",
+      "Pantalla táctil",
+      "Sensores de estacionamiento"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Élite Sport",
+    "location": "San José, Costa Rica",
+    "price": 58900,
+    "year": 2024,
+    "mileage": 8500,
+    "seats": 2,
+    "type": "Deportivo",
+    "image": "https://hips.hearstapps.com/hmg-prod/images/2025-porsche-911-carrera-t-103-69371b6c2a013.jpg?crop=0.809xw:0.683xh;0.107xw,0.202xh&resize=2048:*",
+    "featured": false,
+    "description": "Deportivo de dos plazas con una conducción ágil y acabados elegantes.",
+    "features": [
+      "Asientos deportivos",
+      "Modos de manejo",
+      "Faros LED",
+      "Control de estabilidad"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Nova Electric",
+    "location": "Alajuela, Costa Rica",
+    "price": 42900,
+    "year": 2025,
+    "mileage": 4100,
+    "seats": 5,
+    "type": "Eléctrico",
+    "image": "https://evolveautoscr.com/wp-content/uploads/2023/08/VW-ID4.jpg",
+    "featured": false,
+    "description": "Auto eléctrico de cinco plazas con tecnología práctica para cada viaje.",
+    "features": [
+      "Carga rápida",
+      "Cámara de reversa",
+      "Pantalla digital",
+      "Frenado regenerativo"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Pacífico Comfort",
+    "location": "Puntarenas, Costa Rica",
+    "price": 22700,
+    "year": 2022,
+    "mileage": 32400,
+    "seats": 5,
+    "type": "Sedán",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn8FMGksPWS3UQZJjhXV2kaGP2Llh_nFaBzn24V69SMW8cEstOFqQUzOI&s=10",
+    "featured": false,
+    "description": "Sedán de uso diario con amplio espacio interior y conducción confortable.",
+    "features": [
+      "Aire acondicionado",
+      "Bluetooth",
+      "Control de crucero",
+      "Sensores traseros"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Monte Verde",
+    "location": "Guanacaste, Costa Rica",
+    "price": 39800,
+    "year": 2023,
+    "mileage": 23700,
+    "seats": 7,
+    "type": "SUV",
+    "image": "https://media.es.wired.com/photos/6a5a5dab38dd190d55e10c7c/16:9/w_2560%2Cc_limit/2026-Toyota-RAV4-PHEV-1.jpg",
+    "featured": false,
+    "description": "SUV de siete pasajeros con espacio adaptable para la familia.",
+    "features": [
+      "Tercera fila",
+      "Climatizador",
+      "Cámara de reversa",
+      "Asientos abatibles"
+    ]
+  }
+]
+ 
+ 

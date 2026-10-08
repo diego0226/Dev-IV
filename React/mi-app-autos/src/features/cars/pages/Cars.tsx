@@ -1,8 +1,8 @@
-import React from 'react'
+import './Cars.css'
 
 const Cars = () => {
 	return (
-		<div>
+		<div className="cars-page">
 			Cars
 		</div>
 	)

@@ -1,8 +1,8 @@
-import React from 'react'
+import './CarHero.css'
 
 const CarHero = () => {
 	return (
-		<div>
+		<div className="car-hero">
 			CarHero
 		</div>
 	)

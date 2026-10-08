@@ -1,11 +1,21 @@
-import React from 'react'
+import "./CarFeatures.css";
 
-const CarFeatures = () => {
-	return (
-		<div>
-			CarFeatures
-		</div>
-	)
+interface CarFeaturesProps {
+  features: string[];
 }
 
-export default CarFeatures
+const CarFeatures = ({features}:CarFeaturesProps) => {
+  return (
+    <>
+      <h2>Características</h2>
+
+      <ul className="car-features">
+        {features.map((feature) => (
+          <li key={feature}>✓ {feature}</li>
+        ))}
+      </ul>
+    </>
+  );
+};
+
+export default CarFeatures;

@@ -1,8 +1,8 @@
-import React from 'react'
+import './ContactInfo.css'
 
 const ContactInfo = () => {
 	return (
-		<div>
+		<div className="contact-info">
 			ContactInfo
 		</div>
 	)

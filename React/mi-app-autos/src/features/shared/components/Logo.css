@@ -1,0 +1,33 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: .72rem;
+  color: #f8f4e9;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.18rem;
+  font-weight: 600;
+  letter-spacing: -.04em;
+  line-height: 1;
+}
+
+.logo > span:first-child {
+  display: grid;
+  width: 2.3rem;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid #c9a96a;
+  color: #e7cc93;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.logo small {
+  display: block;
+  margin-top: .22rem;
+  color: #b7ad9b;
+  font-family: 'DM Mono', monospace;
+  font-size: .52rem;
+  font-weight: 400;
+  letter-spacing: .19em;
+  text-transform: uppercase;
+}
