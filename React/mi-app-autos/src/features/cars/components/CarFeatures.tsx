@@ -11,7 +11,10 @@ const CarFeatures = ({features}:CarFeaturesProps) => {
 
       <ul className="car-features">
         {features.map((feature) => (
-          <li key={feature}>✓ {feature}</li>
+          <li key={feature}>
+            <span aria-hidden="true">✓</span>
+            {feature}
+          </li>
         ))}
       </ul>
     </>

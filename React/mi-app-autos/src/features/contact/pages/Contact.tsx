@@ -1,11 +1,14 @@
-import './Contact.css'
+import ContactForm from "../components/ContactForm";
+import ContactInfo from "../components/ContactInfo";
+import "./Contact.css";
 
 const Contact = () => {
-	return (
-		<div className="contact-page">
-			Contact
-		</div>
-	)
-}
+  return (
+    <section className="container contact-page">
+      <ContactInfo />
+      <ContactForm />
+    </section>
+  );
+};
 
-export default Contact
+export default Contact;

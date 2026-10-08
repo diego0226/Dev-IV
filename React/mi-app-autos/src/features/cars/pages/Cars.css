@@ -1,1 +1,14 @@
-.cars-page { min-height: 55vh; padding: 5rem max(1.5rem, calc((100% - 1180px) / 2)); color: #f3eee4; font-family: 'Playfair Display', Georgia, serif; font-size: 3rem; }
+.cars-page { padding-top: 3.25rem; }
+.cars-page__header { display: grid; gap: 2rem; }
+.cars-page h1 { margin: 0; color: #f7f3ea; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2.6rem, 11vw, 4.4rem); font-weight: 500; letter-spacing: -.06em; line-height: 1; }
+.cars-page__count { margin: 2rem 0 1.25rem; padding-bottom: 1rem; border-bottom: 1px solid rgba(231, 220, 197, .12); color: #aaa297; font-family: 'DM Mono', monospace; font-size: .6rem; letter-spacing: .14em; text-transform: uppercase; }
+.cars-page__empty { margin: 0; padding: 3.5rem 1.25rem; border: 1px solid rgba(231, 220, 197, .12); background: #171815; color: #bdb7ac; font-size: .95rem; line-height: 1.8; text-align: center; }
+.cars-page .pagination { margin-top: 2.5rem; }
+
+@media (min-width: 760px) {
+  .cars-page { padding-top: 5.5rem; }
+  .cars-page__header { grid-template-columns: minmax(0, 1fr) minmax(16rem, 22rem); align-items: end; gap: 2.5rem; }
+  .cars-page h1 { font-size: clamp(3rem, 5.4vw, 4.4rem); }
+  .cars-page__count { margin-top: 3rem; }
+  .cars-page .pagination { margin-top: 3.5rem; }
+}

@@ -1,1 +1,19 @@
-.car-info { padding: 2rem; border-left: 1px solid #c9a96a; color: #d0c9bb; }
+.car-info { min-width: 0; }
+.car-info > a { display: inline-flex; min-height: 2.75rem; align-items: center; color: #b9b2a5; font-family: 'DM Mono', monospace; font-size: .62rem; letter-spacing: .12em; text-transform: uppercase; transition: color .2s ease; }
+.car-info > a:hover { color: #e1c17e; }
+.car-info > a:focus-visible { outline: 1px solid #d5b36b; outline-offset: 3px; }
+.car-info > p:first-of-type { margin: 1.25rem 0 .8rem; color: #c9a96a; font-family: 'DM Mono', monospace; font-size: .62rem; letter-spacing: .18em; text-transform: uppercase; }
+.car-info h1 { margin: 0; color: #fbf8f1; font-family: 'Playfair Display', Georgia, serif; font-size: clamp(2.7rem, 12vw, 4.8rem); font-weight: 500; letter-spacing: -.06em; line-height: .98; overflow-wrap: break-word; }
+.car-info__specs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 2rem; border-block: 1px solid rgba(231, 220, 197, .12); }
+.car-info__specs span { display: grid; align-content: start; gap: .4rem; padding: 1.1rem .5rem 1.1rem 0; color: #aaa297; font-family: 'DM Mono', monospace; font-size: .56rem; letter-spacing: .1em; text-transform: uppercase; }
+.car-info__specs span + span { padding-left: .9rem; border-left: 1px solid rgba(231, 220, 197, .12); }
+.car-info__specs strong { color: #f2efe9; font-family: 'Playfair Display', Georgia, serif; font-size: 1.45rem; font-weight: 500; letter-spacing: -.03em; line-height: 1; white-space: nowrap; }
+.car-info h2 { margin: 2.75rem 0 1rem; color: #f2efe9; font-family: 'Playfair Display', Georgia, serif; font-size: 1.6rem; font-weight: 500; letter-spacing: -.045em; }
+.car-info h2 + p { max-width: 38rem; margin: 0; color: #bdb7ac; font-size: 1rem; line-height: 1.85; }
+
+@media (min-width: 640px) {
+  .car-info__specs span { padding-block: 1.4rem; font-size: .6rem; }
+  .car-info__specs span + span { padding-left: 1.5rem; }
+  .car-info__specs strong { font-size: 1.9rem; }
+  .car-info h2 { margin-top: 3.5rem; font-size: 1.85rem; }
+}

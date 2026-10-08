@@ -1,11 +1,16 @@
-import './CarHero.css'
+import type { Car } from "../types/Cars";
+import "./CarHero.css";
 
-const CarHero = () => {
-	return (
-		<div className="car-hero">
-			CarHero
-		</div>
-	)
+interface CarHeroProps {
+  car: Car;
 }
 
-export default CarHero
+const CarHero = ({car}:CarHeroProps) => {
+  return (
+    <div className="car-hero">
+      <img src={car.image} alt={`Ilustración de ${car.name}`} />
+    </div>
+  );
+};
+
+export default CarHero;

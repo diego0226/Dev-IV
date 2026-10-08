@@ -1,1 +1,6 @@
-.car-hero { padding: 5rem; border: 1px solid rgba(231, 220, 197, .15); color: #e2ca94; font-family: 'Playfair Display', Georgia, serif; font-size: 2rem; }
+.car-hero { position: relative; width: 100%; aspect-ratio: 4 / 3; max-height: 68vh; overflow: hidden; border-bottom: 1px solid rgba(231, 220, 197, .11); background: #1b1c18; }
+.car-hero img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.82) contrast(1.05); }
+.car-hero::after { position: absolute; inset: 0; content: ''; background: linear-gradient(180deg, rgba(16, 17, 16, .3), transparent 26%, transparent 58%, rgba(16, 17, 16, .88)); pointer-events: none; }
+
+@media (min-width: 640px) { .car-hero { aspect-ratio: 16 / 9; } }
+@media (min-width: 900px) { .car-hero { aspect-ratio: 21 / 9; max-height: 560px; } }
