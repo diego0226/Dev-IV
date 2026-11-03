@@ -1,5 +1,5 @@
 import { Plus } from 'lucide-react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import Logo from '../components/Logo'
 
 const navLinkClass = ({ isActive }: { isActive: boolean }) =>
@@ -10,6 +10,14 @@ const navLinkClass = ({ isActive }: { isActive: boolean }) =>
   }`
 
 const Navbar = () => {
+  const { pathname } = useLocation()
+
+  // El botón principal cambia según la sección en la que esté el usuario
+  const isUsersSection = pathname.startsWith('/user')
+  const cta = isUsersSection
+    ? { to: '/users/new', label: 'Nuevo usuario' }
+    : { to: '/products/new', label: 'Nuevo producto' }
+
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/80 backdrop-blur-lg">
       <nav
@@ -28,13 +36,17 @@ const Navbar = () => {
             Productos
           </NavLink>
 
+          <NavLink to="/users" end className={navLinkClass}>
+            Usuarios
+          </NavLink>
+
           <NavLink
-            to="/products/new"
+            to={cta.to}
             className="ml-1 inline-flex items-center gap-1.5 rounded-xl bg-slate-900 px-3 py-2 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-slate-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 sm:px-4"
           >
             <Plus size={16} aria-hidden="true" />
-            <span className="hidden sm:inline">Nuevo producto</span>
-            <span className="sm:hidden">Nuevo</span>
+            <span className="hidden sm:inline">{cta.label}</span>
+            <span className="sr-only sm:hidden">{cta.label}</span>
           </NavLink>
         </div>
       </nav>

@@ -31,12 +31,15 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 // Repositories
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 // Services
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IUserService, UserService>();
 
 // Facades
 builder.Services.AddScoped<IProductFacade, ProductFacade>();
+builder.Services.AddScoped<IUserFacade, UserFacade>();
 
 var app = builder.Build();
 
