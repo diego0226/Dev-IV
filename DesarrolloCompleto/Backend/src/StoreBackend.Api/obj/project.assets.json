@@ -3263,19 +3263,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\zamor\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zamor\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Api\\StoreBackend.Api.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Api\\StoreBackend.Api.csproj",
       "projectName": "StoreBackend.Api",
-      "projectPath": "C:\\Users\\zamor\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Api\\StoreBackend.Api.csproj",
-      "packagesPath": "C:\\Users\\zamor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zamor\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Api\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Api\\StoreBackend.Api.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\zamor\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -3288,11 +3288,11 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\zamor\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Dto\\StoreBackend.Dto.csproj": {
-              "projectPath": "C:\\Users\\zamor\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Dto\\StoreBackend.Dto.csproj"
+            "C:\\Users\\Admin\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Dto\\StoreBackend.Dto.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Dto\\StoreBackend.Dto.csproj"
             },
-            "C:\\Users\\zamor\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Facade\\StoreBackend.Facade.csproj": {
-              "projectPath": "C:\\Users\\zamor\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Facade\\StoreBackend.Facade.csproj"
+            "C:\\Users\\Admin\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Facade\\StoreBackend.Facade.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Facade\\StoreBackend.Facade.csproj"
             }
           }
         }
@@ -3342,7 +3342,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

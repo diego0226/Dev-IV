@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zamor\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Exceptions\\StoreBackend.Exceptions.csproj": {}
+    "C:\\Users\\Admin\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Exceptions\\StoreBackend.Exceptions.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zamor\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Exceptions\\StoreBackend.Exceptions.csproj": {
+    "C:\\Users\\Admin\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Exceptions\\StoreBackend.Exceptions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zamor\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Exceptions\\StoreBackend.Exceptions.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Exceptions\\StoreBackend.Exceptions.csproj",
         "projectName": "StoreBackend.Exceptions",
-        "projectPath": "C:\\Users\\zamor\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Exceptions\\StoreBackend.Exceptions.csproj",
-        "packagesPath": "C:\\Users\\zamor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zamor\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Exceptions\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Exceptions\\StoreBackend.Exceptions.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Downloads\\Dev-IV\\DesarrolloCompleto\\Backend\\src\\StoreBackend.Exceptions\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\zamor\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
