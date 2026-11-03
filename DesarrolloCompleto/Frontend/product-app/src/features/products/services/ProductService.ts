@@ -56,3 +56,22 @@ export async function deleteProduct(productResourceId: string): Promise<void> {
     throw error;
   }
 }
+
+export async function getProductById(
+  productResourceId: string,
+): Promise<Product> {
+  try {
+    const response = await fetch(
+      `${API_URL}/${encodeURIComponent(productResourceId)}`,
+    );
+ 
+    if (!response.ok) {
+      throw new Error(`Error al obtener el producto: ${response.status}`);
+    }
+ 
+    return await response.json();
+  } catch (error) {
+    console.error("Error en ProductService:", error);
+    throw error;
+  }
+}

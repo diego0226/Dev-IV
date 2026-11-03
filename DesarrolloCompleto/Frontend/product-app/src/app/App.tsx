@@ -1,5 +1,4 @@
-import { Route, Routes } from "react-router-dom";
-import "./App.css";
+import { Navigate, Route, Routes } from "react-router-dom";
 import Layout from "../features/shared/layout/Layout";
 import ProductDetail from "../features/products/pages/ProductDetail";
 import Products from "../features/products/pages/Products";
@@ -11,6 +10,7 @@ function App() {
     <>
       <Routes>
         <Route element={<Layout />}>
+          <Route path="/" element={<Navigate to="/products" replace />} />
           <Route path="/products" element={<Products />} />
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/products/new" element={<CreateProduct />} />
