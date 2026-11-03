@@ -38,3 +38,21 @@ export async function createProduct(product: NewProduct): Promise<void> {
     throw error;
   }
 }
+
+export async function deleteProduct(productResourceId: string): Promise<void> {
+  try {
+    const response = await fetch(
+      `${API_URL}/${encodeURIComponent(productResourceId)}`,
+      {
+        method: "DELETE",
+      },
+    );
+ 
+    if (!response.ok) {
+      throw new Error(`Error al eliminar el producto: ${response.status}`);
+    }
+  } catch (error) {
+    console.error("Error en productService:", error);
+    throw error;
+  }
+}
